@@ -36,7 +36,7 @@ export async function POST(req) {
         };
       }),
       success_url: `${req.headers.get("origin")}/success`,
-      cancel_url: `${req.headers.get("origin")}/canceled`,
+      cancel_url: `${req.headers.get("origin")}/cart`,
     };
 
     // Crea la sessione di checkout
