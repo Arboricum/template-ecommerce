@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+    height: 130px;
+    margin-top: 50px;
+    position: relative; /* Assicurati che il z-index funzioni */
+    z-index: 10;
+    padding: 0 150px;
+    background-color: rgba(225, 192, 171, 0.7);
+}
+.logo-header {
+    width: 120px;
+}
+@media screen and (max-width: 1200px) {
+    .header {
+        padding: 0 50px;
+    }
+  }
+@media screen and (max-width: 960px) {
+    .header {
+        padding: 0;
+    }
+}
+/*HeaderAdmin*/
+.header-admin {
+    display: flex;
+    position: absolute;
+    right: 150px;
+    top: 10px;
+    width: 180px;
+    justify-content: space-between;
+    background-color: rgba(207, 207, 207, 1);
+    padding: 5px 15px;
+}
+.header-admin a:hover {
+    font-weight: 600;
+}
+@media screen and (max-width: 960px) {
+    .header-admin {
+        right: 15px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .header-admin {
+        top: -50px;
+        right: 0;
+    }
+}

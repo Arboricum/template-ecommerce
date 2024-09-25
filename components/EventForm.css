@@ -1,0 +1,17 @@
+.event-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.img-uploader {
+    grid-column: 1;
+}
+.form-container, .submit-btn {
+    grid-column: 2;
+}
+.form-container {
+    width: 100%;
+}
+.text-input, .select-input, .number-input {
+    display: block;
+    width: 100%;
+}

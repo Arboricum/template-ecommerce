@@ -1,0 +1,91 @@
+.navbar {
+    margin-left: auto;
+}
+.classic-menu, .hamb-menu {
+    display: flex;
+    list-style: none;
+}
+.classic-menu li, .hamb-menu li {
+    margin-right: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: black;
+}
+.navbar a {
+    text-decoration: none;
+}
+.navbar ul li:hover {
+    cursor: pointer;
+    color: rgba(207, 207, 207, 1);
+    text-shadow: 
+    -2px -1px 1px #000,  /* Ombra verso l'alto a sinistra */
+    2px -1px 1px #000,   /* Ombra verso l'alto a destra */
+    -2px 1px 1px #000,   /* Ombra verso il basso a sinistra */
+    2px 1px 1px #000;    /* Ombra verso il basso a destra */
+}
+.hamb-cart {
+    display: none;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: black;
+    position: absolute;
+    top: 70px;
+    right: 120px;
+}
+.hamb-menu-ico {
+    display: none;
+}
+.hamb-menu-container {
+    display: none; /* Nascondi il menu per default */
+    position: absolute;
+    top: 130px; /* Regola la posizione in base alle tue necessità */
+    right: 0;
+    width: 210px; /* Occupare l'intera larghezza della viewport */
+    height: auto; /* Occupare l'intera altezza della viewport */
+    /* Sfondo del menu */
+    z-index: 1000; /* Porta il menu in cima agli altri elementi */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.hamb-menu-ico:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.hamb-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(207, 207, 207, 0.9); 
+    padding: 30px;
+    width: 100%;
+}
+@media screen and (max-width: 960px) {
+    .hamb-cart {
+        display: inline;
+    }
+    .hamb-menu-ico {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        width: 80px;
+    }
+    .hamb-menu-container {
+        display: flex;
+    }
+    .hamb-menu li {
+        margin-bottom: 20px;
+        font-size: 1.6em;
+    }
+    .classic-menu {
+        display: none;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    .hamb-cart {
+        top: 5px;
+        right: 5px;
+    }
+  }

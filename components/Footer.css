@@ -1,0 +1,13 @@
+.footer {
+    
+    background-color: rgba(207, 207, 207, 1);
+}
+.footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-around;
+}
+.footer ul li {
+    text-decoration: none;
+}
