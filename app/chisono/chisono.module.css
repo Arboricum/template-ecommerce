@@ -1,0 +1,38 @@
+.chisono-bkg {
+  background-image: url('/img/bgs/bg12.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px 200px 0 200px;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+}
+.chisono-section {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.chisono-section aside,
+.chisono-section article {
+  flex: 1;
+}
+.chisono-section article {
+  padding: 0 50px;
+  font-size: larger;
+  font-weight: 600;
+}
+@media screen and (max-width: 1130px) {
+  .chisono-section {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .chisono-section article {
+    padding: 0 20px;
+    margin-top: 20px;
+  }
+}

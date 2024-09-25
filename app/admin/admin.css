@@ -1,0 +1,33 @@
+.admin-prod-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+.admin-prod-container > * {
+    margin: 5px;
+}
+.admin-main > h2, .admin-main > h1 {
+    margin-bottom: 20px;
+}
+.admin-menu a {
+    display: block;
+    margin: 20px 0;
+}
+.admin-menu a:hover {
+    font-weight: 600;
+}
+.admin-back-link:hover {
+    font-weight: 600;
+}
+@media screen and (max-width: 800px) {
+    .admin-prod-container {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (max-width: 460px) {
+    .admin-prod-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
