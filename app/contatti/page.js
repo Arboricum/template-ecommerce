@@ -1,6 +1,6 @@
 import React from 'react'
 import ContattiForm from '@/components/ContattiForm'
-import ctcBg from '../../public/img/bgs/contatti.jpg'
+//import ctcBg from '../../public/img/bgs/contatti.jpg'
 import './Contatti.css'
 import Image from 'next/image';
 
